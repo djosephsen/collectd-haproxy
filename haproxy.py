@@ -39,7 +39,11 @@ METRIC_TYPES = {
   'scur': ('session_current', 'gauge'),
   'wredis': ('redistributed', 'derive'),
   'wretr': ('retries', 'counter'),
-  'Uptime_sec': ('uptime_seconds', 'counter')
+  'Uptime_sec': ('uptime_seconds', 'counter'),
+  'ctime': ('connect_time', 'gauge'),
+  'rtime': ('response_time', 'gauge'),
+  'ttime': ('total_time', 'gauge'),
+  'qtime': ('queue_time', 'gauge')
 }
 
 METRIC_DELIM = '.' # for the frontend/backend stats
